@@ -1,28 +1,23 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+  <main class="bg-gray-100">
+    <ap-header></ap-header>
+    <div class="container px-5 text-gray-800">
+    <h2 class="font-bold mt-10">Today's Attendance - 04/11/2021</h2>
+    </div>
+    <router-view  class="container px-5 sm:px-10 py-10 flex justify-center"/>
+  </main>
+    
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import ApHeader from '@/components/ApHeader'
+// import ApTable from '@/components/ApTable'
 
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
+  components: {ApHeader}
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+
 </style>
